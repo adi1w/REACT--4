@@ -1,87 +1,80 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Students = () => {
-	const [studentDetails] = useState([
-		{
-			name: 'John',
-			age: '26',
-			course: 'MERN',
-			batch: 'October',
-			
-		},
-		{
-			name: 'Doe',
-			age: '25',
-			course: 'MERN',
-			batch: 'November',
-			
-		},
-		{
-			name: 'Biden',
-			age: '26',
-			course: 'MERN',
-			batch: 'September',
-			
-		},
-		{
-			name: 'Barar',
-			age: '22',
-			course: 'MERN',
-			batch: 'September',
-			
-		},
-		{
-			name: 'Christ',
-			age: '23',
-			course: 'MERN',
-			batch: 'October',
-			
-		},
-		{
-			name: 'Elent',
-			age: '24',
-			course: 'MERN',
-			batch: 'November',
-			
-		},
-		{
-			name: 'Anusha',
-			age: '22',
-			course: 'MERN',
-			batch: 'March',
-			
-		},
-	]);
-	return (
-		<div>
-			<h1>Students Details</h1>
-			
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Age</th>
-						<th>Course</th>
-						<th>Batch</th>
-						
-					</tr>
-				</thead>
-				<tbody>
-					{studentDetails.map((student, index) => {
-						return (
-							<tr key={index}>
-								<td>{student.name}</td>
-								<td>{student.age}</td>
-								<td>{student.course}</td>
-								<td>{student.batch}</td>
-								
-							</tr>
-						);
-					})}
-				</tbody>
-			</table>
-		</div>
-	);
-};
 
-export default Students;
+const Student = () => {
+
+    
+    
+  return (
+    <div>
+        <div className='Top'>
+          <h2>Student Detail</h2>
+          <button>Add new student</button>
+        </div>
+
+        <div className='studentDown'>
+          <table >
+            
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Batch</th>
+                <th>Change</th>
+              </tr>
+
+              <tr>
+                <td>John</td>
+                <td>24</td>
+                <td>MERN</td>
+                <td>October</td>
+                <td><Link to={'/User/' }>Edit</Link></td>
+              </tr>
+
+              <tr>
+                <td>Nikhil</td>
+                <td>22</td>
+                <td>MERN</td>
+                <td>October</td>
+                <td><Link to={'/User/' }>Edit</Link></td>
+              </tr>
+
+              <tr>
+                <td>Naman</td>
+                <td>25</td>
+                <td>MERN</td>
+                <td>October</td>
+                <td><Link to={'/User/' }>Edit</Link></td>
+              </tr>
+
+              <tr>
+                <td>Preeti</td>
+                <td>27</td>
+                <td>MERN</td>
+                <td>October</td>
+                <td><Link to={'/User/' }>Edit</Link></td>
+              </tr>
+
+              <tr>
+                <td>Jisika</td>
+                <td>24</td>
+                <td>MERN</td>
+                <td>October</td>
+                <td><Link to={'/User/' }>Edit</Link></td>
+              </tr>
+
+              <tr>
+                <td>Prerna</td>
+                <td>23</td>
+                <td>MERN</td>
+                <td>October</td>
+                <td><Link to={'/User/' }>Edit</Link></td>
+              </tr>
+          </table>
+        </div>
+    </div>
+  )
+}
+
+export default Student

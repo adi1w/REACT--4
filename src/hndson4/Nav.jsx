@@ -1,8 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Styles.css';
-
-const Nav = () => {
+ import React from 'react';
+ import { Link } from 'react-router-dom';
+ import './Styles.css';
+ const Nav = () => {
 	return (
 		<nav>
 			<div>

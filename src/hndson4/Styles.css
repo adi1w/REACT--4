@@ -4,55 +4,72 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+
 }
-.link {
-	color: white;
+
+.link{
+	/* display: flex; */
+    justify-content:space-between;
+    background-color: #071952;
+    height: 50px;
+    color: white;
+    font-size: 20px ;
+    box-sizing: border-box;
+    /* padding-top:5px ; */
+    font-family: 'Courgette', cursive
+  }
+  
+  .link a{
+	font-family: 'Cedarville Cursive', cursive;
 	text-decoration: none;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: larger;
-}
-
-h1 {
-	padding: 40px;
-	color: white;
-	text-shadow: 3px 4px 3px darkmagenta;
-}
-table,
-thead {
-	border-collapse: collapse;
-	width: 80%;
-	margin: auto;
-	background-color: orchid;
-	text-align: left;
-}
-tr {
-	border-bottom: 1px solid salmon;
-}
-td,
-th {
-	padding: 10px;
-	color: olive;
-	background-color: antiquewhite;
-}
-th {
-	background-color: deeppink;
-	color: Gold;
-}
-.add{
-
+	color: greenyellow;
+  
+  }
+  
+  .Top{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+  }
+  
+  .Top button{
+	height: 40px;
+	width: 150px;
+	background-color: fuchsia;
+	border: 2px solid darkmagenta;
+	border-radius: 20px;
+	cursor: pointer;
+  }
+  
+  .studentTop button:hover{
+	background-color: aquamarine;
+  }
+  
+  .studentDown{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .studentDown table{
+	background-color: aliceblue;
+	height: 380px;
+	width: 900px;
+	text-align: center;
+  }
+  
+  .studentDown td,th{
+	border-bottom: 1px solid black;
+  
+  }
+  .head{
+		color:midnightblue;
 		justify-content: center;
-		width: 180px;
-		height: 40px;
-		border: 1px solid black;
-		border-radius: 10px;
-		background-color: darkorchid;
-		display: flex;
-		font-weight: bolder;
-		font-size: 18px;
-	    margin-left: 1210px; 
-	
-	
-	
-		
-	
-}
+		padding: 20px;
+		position: relative;
+		left: 43%;
+
+  }
+  
